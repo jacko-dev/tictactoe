@@ -1,0 +1,118 @@
+body {
+  background-color: #39444c;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size:60px;
+  color: #f16764;
+}
+.board button {
+  position: grid;
+  width:100px;
+  height:100px;
+  padding-left: 5%;
+  opacity: 1;
+}
+.board {
+  text-align: center;
+}
+.board button#one {
+  background-color: #f16764;
+  border-radius: 20%;
+  border: 0px;
+}
+.board button#one:hover {
+  background-color: #db908f;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 0px;
+}
+.board button#two {
+  background-color: #f16764;
+  border-radius: 20%;
+  border: 0px;
+}
+.board button#two:hover {
+  background-color: #db908f;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 0px;
+}
+.board button#three {
+  background-color: #f16764;
+  border-radius: 20%;
+  border: 0px;
+}
+.board button#three:hover {
+  background-color: #db908f;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 0px;
+}
+.board button#four {
+  background-color: #f16764;
+  border-radius: 20%;
+  border: 0px;
+}
+.board button#four:hover {
+  background-color: #db908f;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 0px;
+}
+.board button#five {
+  background-color: #f16764;
+  border-radius: 20%;
+  border: 0px;
+}
+.board button#five:hover {
+  background-color: #db908f;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 0px;
+}
+.board button#six {
+  background-color: #f16764;
+  border-radius: 20%;
+  border: 0px;
+}
+.board button#six:hover {
+  background-color: #db908f;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 0px;
+}
+.board button#seven {
+  background-color: #f16764;
+  border-radius: 20%;
+  border: 0px;
+}
+.board button#seven:hover {
+  background-color: #db908f;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 0px;
+}
+.board button#eight {
+  background-color: #f16764;
+  border-radius: 20%;
+  border: 0px;
+}
+.board button#eight:hover {
+  background-color: #db908f;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 0px;
+}
+.board button#nine {
+  background-color: #f16764;
+  border-radius: 20%;
+  border: 0px;
+}
+.board button#nine:hover {
+  background-color: #db908f;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 0px;
+}
