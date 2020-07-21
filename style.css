@@ -1,11 +1,11 @@
 body {
-  background-color: #39444c;
+  background-color: #02111B;
 }
 h1 {
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-size:60px;
-  color: #f16764;
+  color: #FFC43D;
 }
 .board button {
   position: grid;
@@ -23,7 +23,7 @@ h1 {
 }
 button#reset {
   position: grid;
-  background-color: #f16764;
+  background-color: #FFC43D;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 50px;
   width:100px;
@@ -32,13 +32,13 @@ button#reset {
   height:50px;
   font-family: "Poppins", sans-serif;
   border: 0px;
-  color: #39444c;
+  color: #02111B;
   font-size:25px;
 }
 button#reset:hover {
   position: grid;
-  background-color: #db908f;
-  box-shadow: 0px 0px 26px #f16764;
+  background-color: #FFB60A;
+  box-shadow: 0px 0px 26px #E09D00;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 50px;
   cursor: pointer;
@@ -47,144 +47,382 @@ button#reset:hover {
   height:50px;
   font-family: "Poppins", sans-serif;
   border: 0px;
-  color: #39444c;
+  color: #02111B;
   font-size:25px;
 }
 .board button#one {
-  background-color: #f16764;
+  background-color: #F8FFE5;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   border: 0px;
 }
 .board button#one:hover {
-  background-color: #db908f;
-  box-shadow: 0px 0px 26px #f16764;
+  background-color: #F4FFD6;
+  box-shadow: 0px 0px 26px #FFC43D;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   cursor: pointer;
   border: 0px;
 }
-.sq1 .board button#one {
-  background-color: #6491f1;
+.sq1-player .board button#one {
+  background-color: #377771;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   border: 0px;
 }
-.sq1 .board button#one:hover {
-  background-color: #4979d3;
-  box-shadow: 0px 0px 26px #001aff;
+.sq1-player .board button#one:hover {
+  background-color: #2D625D;
+  box-shadow: 0px 0px 26px #204642;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
-  cursor: pointer;
+  cursor:pointer;
+  border: 0px;
+}
+.sq2-player .board button#two {
+  background-color: #377771;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq2-player .board button#two:hover {
+  background-color: #2D625D;
+  box-shadow: 0px 0px 26px #204642;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq3-player .board button#three {
+  background-color: #377771;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq3-player .board button#three:hover {
+  background-color: #2D625D;
+  box-shadow: 0px 0px 26px #204642;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq4-player .board button#four {
+  background-color: #377771;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq4-player .board button#four:hover {
+  background-color: #2D625D;
+  box-shadow: 0px 0px 26px #204642;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq5-player .board button#five {
+  background-color: #377771;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq5-player .board button#five:hover {
+  background-color: #2D625D;
+  box-shadow: 0px 0px 26px #204642;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq6-player .board button#six {
+  background-color: #377771;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq6-player .board button#six:hover {
+  background-color: #2D625D;
+  box-shadow: 0px 0px 26px #204642;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq7-player .board button#seven {
+  background-color: #377771;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq7-player .board button#seven:hover {
+  background-color: #2D625D;
+  box-shadow: 0px 0px 26px #204642;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq8-player .board button#eight {
+  background-color: #377771;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq8-player .board button#eight:hover {
+  background-color: #2D625D;
+  box-shadow: 0px 0px 26px #204642;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq9-player .board button#nine {
+  background-color: #377771;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq9-player .board button#nine:hover {
+  background-color: #2D625D;
+  box-shadow: 0px 0px 26px #204642;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq1-cpu .board button#one {
+  background-color: #ED6A5E;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq1-cpu .board button#one:hover {
+  background-color: #E94435;
+  box-shadow: 0px 0px 26px #931B10;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq2-cpu .board button#two {
+  background-color: #ED6A5E;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq2-cpu .board button#two:hover {
+  background-color: #E94435;
+  box-shadow: 0px 0px 26px #931B10;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq3-cpu .board button#three {
+  background-color: #ED6A5E;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq3-cpu .board button#three:hover {
+  background-color: #E94435;
+  box-shadow: 0px 0px 26px #931B10;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq4-cpu .board button#four {
+  background-color: #ED6A5E;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq4-cpu .board button#four:hover {
+  background-color: #E94435;
+  box-shadow: 0px 0px 26px #931B10;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq5-cpu .board button#five {
+  background-color: #ED6A5E;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq5-cpu .board button#five:hover {
+  background-color: #E94435;
+  box-shadow: 0px 0px 26px #931B10;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq6-cpu .board button#six {
+  background-color: #ED6A5E;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq6-cpu .board button#six:hover {
+  background-color: #E94435;
+  box-shadow: 0px 0px 26px #931B10;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq7-cpu .board button#seven {
+  background-color: #ED6A5E;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq7-cpu .board button#seven:hover {
+  background-color: #E94435;
+  box-shadow: 0px 0px 26px #931B10;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq8-cpu .board button#eight {
+  background-color: #ED6A5E;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq8-cpu .board button#eight:hover {
+  background-color: #E94435;
+  box-shadow: 0px 0px 26px #931B10;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
+  border: 0px;
+}
+.sq9-cpu .board button#nine {
+  background-color: #ED6A5E;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  border: 0px;
+}
+.sq9-cpu .board button#nine:hover {
+  background-color: #E94435;
+  box-shadow: 0px 0px 26px #931B10;
+  transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 20%;
+  cursor:pointer;
   border: 0px;
 }
 .board button#two {
-  background-color: #f16764;
+  background-color: #F8FFE5;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   border: 0px;
 }
 .board button#two:hover {
-  background-color: #db908f;
-  box-shadow: 0px 0px 26px #f16764;
+  background-color: #F4FFD6;
+  box-shadow: 0px 0px 26px #FFC43D;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   cursor: pointer;
   border: 0px;
 }
 .board button#three {
-  background-color: #f16764;
+  background-color: #F8FFE5;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   border: 0px;
 }
 .board button#three:hover {
-  background-color: #db908f;
-  box-shadow: 0px 0px 26px #f16764;
+  background-color: #F4FFD6;
+  box-shadow: 0px 0px 26px #FFC43D;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   cursor: pointer;
   border: 0px;
 }
 .board button#four {
-  background-color: #f16764;
+  background-color: #F8FFE5;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   border: 0px;
 }
 .board button#four:hover {
-  background-color: #db908f;
-  box-shadow: 0px 0px 26px #f16764;
+  background-color: #F4FFD6;
+  box-shadow: 0px 0px 26px #FFC43D;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   cursor: pointer;
   border: 0px;
 }
 .board button#five {
-  background-color: #f16764;
+  background-color: #F8FFE5;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   border: 0px;
 }
 .board button#five:hover {
-  background-color: #db908f;
-  box-shadow: 0px 0px 26px #f16764;
+  background-color: #F4FFD6;
+  box-shadow: 0px 0px 26px #FFC43D;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   cursor: pointer;
   border: 0px;
 }
 .board button#six {
-  background-color: #f16764;
+  background-color: #F8FFE5;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   border: 0px;
 }
 .board button#six:hover {
-  background-color: #db908f;
-  box-shadow: 0px 0px 26px #f16764;
+  background-color: #F4FFD6;
+  box-shadow: 0px 0px 26px #FFC43D;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   cursor: pointer;
   border: 0px;
 }
 .board button#seven {
-  background-color: #f16764;
+  background-color: #F8FFE5;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   border: 0px;
 }
 .board button#seven:hover {
-  background-color: #db908f;
-  box-shadow: 0px 0px 26px #f16764;
+  background-color: #F4FFD6;
+  box-shadow: 0px 0px 26px #FFC43D;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   cursor: pointer;
   border: 0px;
 }
 .board button#eight {
-  background-color: #f16764;
+  background-color: #F8FFE5;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   border: 0px;
 }
 .board button#eight:hover {
-  background-color: #db908f;
-  box-shadow: 0px 0px 26px #f16764;
+  background-color: #F4FFD6;
+  box-shadow: 0px 0px 26px #FFC43D;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   cursor: pointer;
   border: 0px;
 }
 .board button#nine {
-  background-color: #f16764;
+  background-color: #F8FFE5;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   border: 0px;
 }
 .board button#nine:hover {
-  background-color: #db908f;
-  box-shadow: 0px 0px 26px #f16764;
+  background-color: #F4FFD6;
+  box-shadow: 0px 0px 26px #FFC43D;
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
   border-radius: 20%;
   cursor: pointer;
