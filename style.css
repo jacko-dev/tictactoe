@@ -11,11 +11,21 @@ h1 {
   position: grid;
   width:100px;
   height:100px;
-  padding-left: 5%;
+  margin-top: 0.20%;
   opacity: 1;
 }
 .board {
   text-align: center;
+}
+button#reset {
+  background-color: #f16764;
+  border-radius: 50px;
+  width:100px;
+  height:50px;
+  font-family: "Poppins", sans-serif;
+  border: 0px;
+  color: #39444c;
+  font-size:25px;
 }
 .board button#one {
   background-color: #f16764;
