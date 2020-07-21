@@ -18,6 +18,8 @@ sqcap8 = "Empty";
 sqcap9 = "Empty";
 button1.addEventListener('click', () => {
   if (sqcap1 == "Empty") {
-    document.getElementById("")
+    document.body.classList.add("sq1");
+  } else {
+    
   }
 });
