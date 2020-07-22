@@ -40,59 +40,59 @@ function selsq() {
     sqch7=Math.floor(Math.random()*Math.floor(28)+1);
     sqch8=Math.floor(Math.random()*Math.floor(16)+1);
     sqch9=Math.floor(Math.random()*Math.floor(7)+1);
-    sqch1.push(sqgroup);
-    sqch2.push(sqgroup);
-    sqch3.push(sqgroup);
-    sqch4.push(sqgroup);
-    sqch5.push(sqgroup);
-    sqch6.push(sqgroup);
-    sqch7.push(sqgroup);
-    sqch8.push(sqgroup);
-    sqch9.push(sqgroup);
-    if (Math.max(sqgroup) == sqch1 && sqcap1 == "Empty") {
+    sqgroup.push(sqch1);
+    sqgroup.push(sqch2);
+    sqgroup.push(sqch3);
+    sqgroup.push(sqch4);
+    sqgroup.push(sqch5);
+    sqgroup.push(sqch6);
+    sqgroup.push(sqch7);
+    sqgroup.push(sqch8);
+    sqgroup.push(sqch9);
+    if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 == "Empty") {
       document.body.classList.add("sq1-cpu");
       sqcap1 = "CPU";
-    } else if (Math.max(sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
+    } else if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
       sqgroup.shift();
-      if (Math.max(sqgroup) == sqch2 && sqcap2 == "Empty") {
+      if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 == "Empty") {
         document.body.classList.add("sq2-cpu");
         sqcap2 = "CPU";
-      } else if (Math.max(sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
+      } else if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
           sqgroup.shift();
-          if (Math.max(sqgroup) == sqch3 && sqcap3 == "Empty") {
+          if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 == "Empty") {
             document.body.classList.add("sq3-cpu");
             sqcap3 = "CPU";
-        } else if (Math.max(sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
+        } else if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
             sqgroup.shift();
-            if (Math.max(sqgroup) == sqch4 && sqcap4 == "Empty") {
+            if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 == "Empty") {
               document.body.classList.add("sq4-cpu");
               sqcap4 = "CPU";
-            } else if (Math.max(sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
+            } else if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
               sqgroup.shift();
-              if (Math.max(sqgroup) == sqch5 && sqcap5 == "Empty") {
+              if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 == "Empty") {
                 document.body.classList.add("sq5-cpu");
                 sqcap5 = "CPU";
-              } else if (Math.max(sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
+              } else if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
                   sqgroup.shift();
-                  if (Math.max(sqgroup) == sqch6 && sqcap6 == "Empty") {
+                  if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 == "Empty") {
                     document.body.classList.add("sq6-cpu");
                     sqcap6 = "CPU";
-                } else if (Math.max(sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
+                } else if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
                     sqgroup.shift();
-                    if (Math.max(sqgroup) == sqch7 && sqcap7 == "Empty") {
+                    if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 == "Empty") {
                       document.body.classList.add("sq7-cpu");
                       sqcap7 = "CPU";
-                    } else if (Math.max(sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
+                    } else if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
                       sqgroup.shift();
-                      if (Math.max(sqgroup) == sqch8 && sqcap8 == "Empty") {
+                      if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 == "Empty") {
                         document.body.classList.add("sq8-cpu");
                         sqcap8 = "CPU";
-                      } else if (Math.max(sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
+                      } else if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
                           sqgroup.shift();
-                          if (Math.max(sqgroup) == sqch9 && sqcap9 == "Empty") {
+                          if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 == "Empty") {
                             document.body.classList.add("sq9-cpu");
                             sqcap9 = "CPU";
-                        } else if (Math.max(sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
+                        } else if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
                             sqgroup.shift();
                         }
                       }
@@ -114,69 +114,60 @@ function selsq() {
     sqch7=Math.floor(Math.random()*Math.floor(35)+1);
     sqch8=Math.floor(Math.random()*Math.floor(27)+1);
     sqch9=Math.floor(Math.random()*Math.floor(9)+1);
-    sqch1.push(sqgroup);
-    sqch2.push(sqgroup);
-    sqch3.push(sqgroup);
-    sqch4.push(sqgroup);
-    sqch5.push(sqgroup);
-    sqch6.push(sqgroup);
-    sqch7.push(sqgroup);
-    sqch8.push(sqgroup);
-    sqch9.push(sqgroup);
-    if (Math.max(sqgroup) == sqch1 && sqcap1 == "Empty") {
+    sqgroup.push(sqch1);
+    sqgroup.push(sqch2);
+    sqgroup.push(sqch3);
+    sqgroup.push(sqch4);
+    sqgroup.push(sqch5);
+    sqgroup.push(sqch6);
+    sqgroup.push(sqch7);
+    sqgroup.push(sqch8);
+    sqgroup.push(sqch9);
+    if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 == "Empty") {
       document.body.classList.add("sq1-cpu");
       sqcap1 = "CPU";
-    } else if (Math.max(sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
+    } else if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
       sqgroup.shift();
-      selsq();
-      if (Math.max(sqgroup) == sqch2 && sqcap2 == "Empty") {
+      if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 == "Empty") {
         document.body.classList.add("sq2-cpu");
         sqcap2 = "CPU";
-      } else if (Math.max(sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
+      } else if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
           sqgroup.shift();
-          selsq();
-          if (Math.max(sqgroup) == sqch3 && sqcap3 == "Empty") {
+          if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 == "Empty") {
             document.body.classList.add("sq3-cpu");
             sqcap3 = "CPU";
         } else if (Math.max(sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
             sqgroup.shift();
-            selsq();
-            if (Math.max(sqgroup) == sqch4 && sqcap4 == "Empty") {
+            if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 == "Empty") {
               document.body.classList.add("sq4-cpu");
               sqcap4 = "CPU";
-            } else if (Math.max(sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
+            } else if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
               sqgroup.shift();
-              selsq();
-              if (Math.max(sqgroup) == sqch5 && sqcap5 == "Empty") {
+              if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 == "Empty") {
                 document.body.classList.add("sq5-cpu");
                 sqcap5 = "CPU";
-              } else if (Math.max(sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
+              } else if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
                   sqgroup.shift();
-                  selsq();
-                  if (Math.max(sqgroup) == sqch6 && sqcap6 == "Empty") {
+                  if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 == "Empty") {
                     document.body.classList.add("sq6-cpu");
                     sqcap6 = "CPU";
-                } else if (Math.max(sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
+                } else if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
                     sqgroup.shift();
-                    selsq();
-                    if (Math.max(sqgroup) == sqch7 && sqcap7 == "Empty") {
+                    if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 == "Empty") {
                       document.body.classList.add("sq7-cpu");
                       sqcap7 = "CPU";
-                    } else if (Math.max(sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
+                    } else if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
                       sqgroup.shift();
-                      selsq();
-                      if (Math.max(sqgroup) == sqch8 && sqcap8 == "Empty") {
+                      if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 == "Empty") {
                         document.body.classList.add("sq8-cpu");
                         sqcap8 = "CPU";
-                      } else if (Math.max(sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
+                      } else if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
                           sqgroup.shift();
-                          selsq();
-                          if (Math.max(sqgroup) == sqch9 && sqcap9 == "Empty") {
+                          if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 == "Empty") {
                             document.body.classList.add("sq9-cpu");
                             sqcap9 = "CPU";
-                        } else if (Math.max(sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
+                        } else if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
                             sqgroup.shift();
-                            selsq();
                         }
                       }
                     }
@@ -197,69 +188,60 @@ function selsq() {
     sqch7=Math.floor(Math.random()*Math.floor(12)+1);
     sqch8=Math.floor(Math.random()*Math.floor(24)+1);
     sqch9=Math.floor(Math.random()*Math.floor(30)+1);
-    sqch1.push(sqgroup);
-    sqch2.push(sqgroup);
-    sqch3.push(sqgroup);
-    sqch4.push(sqgroup);
-    sqch5.push(sqgroup);
-    sqch6.push(sqgroup);
-    sqch7.push(sqgroup);
-    sqch8.push(sqgroup);
-    sqch9.push(sqgroup);
-    if (Math.max(sqgroup) == sqch1 && sqcap1 == "Empty") {
+    sqgroup.push(sqch1);
+    sqgroup.push(sqch2);
+    sqgroup.push(sqch3);
+    sqgroup.push(sqch4);
+    sqgroup.push(sqch5);
+    sqgroup.push(sqch6);
+    sqgroup.push(sqch7);
+    sqgroup.push(sqch8);
+    sqgroup.push(sqch9);
+    if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 == "Empty") {
       document.body.classList.add("sq1-cpu");
       sqcap1 = "CPU";
-    } else if (Math.max(sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
+    } else if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
       sqgroup.shift();
-      selsq();
       if (Math.max(sqgroup) == sqch2 && sqcap2 == "Empty") {
         document.body.classList.add("sq2-cpu");
         sqcap2 = "CPU";
-      } else if (Math.max(sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
+      } else if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
           sqgroup.shift();
-          selsq();
-          if (Math.max(sqgroup) == sqch3 && sqcap3 == "Empty") {
+          if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 == "Empty") {
             document.body.classList.add("sq3-cpu");
             sqcap3 = "CPU";
-        } else if (Math.max(sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
+        } else if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
             sqgroup.shift();
-            selsq();
-            if (Math.max(sqgroup) == sqch4 && sqcap4 == "Empty") {
+            if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 == "Empty") {
               document.body.classList.add("sq4-cpu");
               sqcap4 = "CPU";
-            } else if (Math.max(sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
+            } else if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
               sqgroup.shift();
-              selsq();
-              if (Math.max(sqgroup) == sqch5 && sqcap5 == "Empty") {
+              if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 == "Empty") {
                 document.body.classList.add("sq5-cpu");
                 sqcap5 = "CPU";
-              } else if (Math.max(sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
+              } else if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
                   sqgroup.shift();
-                  selsq();
-                  if (Math.max(sqgroup) == sqch6 && sqcap6 == "Empty") {
+                  if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 == "Empty") {
                     document.body.classList.add("sq6-cpu");
                     sqcap6 = "CPU";
-                } else if (Math.max(sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
+                } else if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
                     sqgroup.shift();
-                    selsq();
-                    if (Math.max(sqgroup) == sqch7 && sqcap7 == "Empty") {
+                    if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 == "Empty") {
                       document.body.classList.add("sq7-cpu");
                       sqcap7 = "CPU";
-                    } else if (Math.max(sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
+                    } else if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
                       sqgroup.shift();
-                      selsq();
-                      if (Math.max(sqgroup) == sqch8 && sqcap8 == "Empty") {
+                      if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 == "Empty") {
                         document.body.classList.add("sq8-cpu");
                         sqcap8 = "CPU";
-                      } else if (Math.max(sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
+                      } else if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
                           sqgroup.shift();
-                          selsq();
-                          if (Math.max(sqgroup) == sqch9 && sqcap9 == "Empty") {
+                          if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 == "Empty") {
                             document.body.classList.add("sq9-cpu");
                             sqcap9 = "CPU";
-                        } else if (Math.max(sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
+                        } else if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
                             sqgroup.shift();
-                            selsq();
                         }
                       }
                     }
@@ -280,69 +262,60 @@ function selsq() {
     sqch7=Math.floor(Math.random()*Math.floor(73)+1);
     sqch8=Math.floor(Math.random()*Math.floor(71)+1);
     sqch9=Math.floor(Math.random()*Math.floor(31)+1);
-    sqch1.push(sqgroup);
-    sqch2.push(sqgroup);
-    sqch3.push(sqgroup);
-    sqch4.push(sqgroup);
-    sqch5.push(sqgroup);
-    sqch6.push(sqgroup);
-    sqch7.push(sqgroup);
-    sqch8.push(sqgroup);
-    sqch9.push(sqgroup);
-    if (Math.max(sqgroup) == sqch1 && sqcap1 == "Empty") {
+    sqgroup.push(sqch1);
+    sqgroup.push(sqch2);
+    sqgroup.push(sqch3);
+    sqgroup.push(sqch4);
+    sqgroup.push(sqch5);
+    sqgroup.push(sqch6);
+    sqgroup.push(sqch7);
+    sqgroup.push(sqch8);
+    sqgroup.push(sqch9);
+    if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 == "Empty") {
       document.body.classList.add("sq1-cpu");
       sqcap1 = "CPU";
-    } else if (Math.max(sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
+    } else if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
       sqgroup.shift();
-      selsq();
       if (Math.max(sqgroup) == sqch2 && sqcap2 == "Empty") {
         document.body.classList.add("sq2-cpu");
         sqcap2 = "CPU";
-      } else if (Math.max(sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
+      } else if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
           sqgroup.shift();
-          selsq();
-          if (Math.max(sqgroup) == sqch3 && sqcap3 == "Empty") {
+          if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 == "Empty") {
             document.body.classList.add("sq3-cpu");
             sqcap3 = "CPU";
-        } else if (Math.max(sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
+        } else if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
             sqgroup.shift();
-            selsq();
-            if (Math.max(sqgroup) == sqch4 && sqcap4 == "Empty") {
+            if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 == "Empty") {
               document.body.classList.add("sq4-cpu");
               sqcap4 = "CPU";
-            } else if (Math.max(sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
+            } else if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
               sqgroup.shift();
-              selsq();
-              if (Math.max(sqgroup) == sqch5 && sqcap5 == "Empty") {
+              if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 == "Empty") {
                 document.body.classList.add("sq5-cpu");
                 sqcap5 = "CPU";
-              } else if (Math.max(sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
+              } else if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
                   sqgroup.shift();
-                  selsq();
-                  if (Math.max(sqgroup) == sqch6 && sqcap6 == "Empty") {
+                  if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 == "Empty") {
                     document.body.classList.add("sq6-cpu");
                     sqcap6 = "CPU";
-                } else if (Math.max(sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
+                } else if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
                     sqgroup.shift();
-                    selsq();
-                    if (Math.max(sqgroup) == sqch7 && sqcap7 == "Empty") {
+                    if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 == "Empty") {
                       document.body.classList.add("sq7-cpu");
                       sqcap7 = "CPU";
-                    } else if (Math.max(sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
+                    } else if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
                       sqgroup.shift();
-                      selsq();
-                      if (Math.max(sqgroup) == sqch8 && sqcap8 == "Empty") {
+                      if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 == "Empty") {
                         document.body.classList.add("sq8-cpu");
                         sqcap8 = "CPU";
-                      } else if (Math.max(sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
+                      } else if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
                           sqgroup.shift();
-                          selsq();
-                          if (Math.max(sqgroup) == sqch9 && sqcap9 == "Empty") {
+                          if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 == "Empty") {
                             document.body.classList.add("sq9-cpu");
                             sqcap9 = "CPU";
-                        } else if (Math.max(sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
+                        } else if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
                             sqgroup.shift();
-                            selsq();
                         }
                       }
                     }
@@ -363,69 +336,60 @@ function selsq() {
     sqch7=Math.floor(Math.random()*Math.floor(70)+1);
     sqch8=Math.floor(Math.random()*Math.floor(73)+1);
     sqch9=Math.floor(Math.random()*Math.floor(69)+1);
-    sqch1.push(sqgroup);
-    sqch2.push(sqgroup);
-    sqch3.push(sqgroup);
-    sqch4.push(sqgroup);
-    sqch5.push(sqgroup);
-    sqch6.push(sqgroup);
-    sqch7.push(sqgroup);
-    sqch8.push(sqgroup);
-    sqch9.push(sqgroup);
-    if (Math.max(sqgroup) == sqch1 && sqcap1 == "Empty") {
+    sqgroup.push(sqch1);
+    sqgroup.push(sqch2);
+    sqgroup.push(sqch3);
+    sqgroup.push(sqch4);
+    sqgroup.push(sqch5);
+    sqgroup.push(sqch6);
+    sqgroup.push(sqch7);
+    sqgroup.push(sqch8);
+    sqgroup.push(sqch9);
+    if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 == "Empty") {
       document.body.classList.add("sq1-cpu");
       sqcap1 = "CPU";
-    } else if (Math.max(sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
+    } else if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
       sqgroup.shift();
-      selsq();
-      if (Math.max(sqgroup) == sqch2 && sqcap2 == "Empty") {
+      if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 == "Empty") {
         document.body.classList.add("sq2-cpu");
         sqcap2 = "CPU";
-      } else if (Math.max(sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
+      } else if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
           sqgroup.shift();
-          selsq();
-          if (Math.max(sqgroup) == sqch3 && sqcap3 == "Empty") {
+          if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 == "Empty") {
             document.body.classList.add("sq3-cpu");
             sqcap3 = "CPU";
-        } else if (Math.max(sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
+        } else if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
             sqgroup.shift();
-            selsq();
-            if (Math.max(sqgroup) == sqch4 && sqcap4 == "Empty") {
+            if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 == "Empty") {
               document.body.classList.add("sq4-cpu");
               sqcap4 = "CPU";
-            } else if (Math.max(sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
+            } else if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
               sqgroup.shift();
-              selsq();
-              if (Math.max(sqgroup) == sqch5 && sqcap5 == "Empty") {
+              if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 == "Empty") {
                 document.body.classList.add("sq5-cpu");
                 sqcap5 = "CPU";
-              } else if (Math.max(sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
+              } else if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
                   sqgroup.shift();
-                  selsq();
-                  if (Math.max(sqgroup) == sqch6 && sqcap6 == "Empty") {
+                  if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 == "Empty") {
                     document.body.classList.add("sq6-cpu");
                     sqcap6 = "CPU";
-                } else if (Math.max(sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
+                } else if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
                     sqgroup.shift();
-                    selsq();
-                    if (Math.max(sqgroup) == sqch7 && sqcap7 == "Empty") {
+                    if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 == "Empty") {
                       document.body.classList.add("sq7-cpu");
                       sqcap7 = "CPU";
-                    } else if (Math.max(sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
+                    } else if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
                       sqgroup.shift();
-                      selsq();
-                      if (Math.max(sqgroup) == sqch8 && sqcap8 == "Empty") {
+                      if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 == "Empty") {
                         document.body.classList.add("sq8-cpu");
                         sqcap8 = "CPU";
-                      } else if (Math.max(sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
+                      } else if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
                           sqgroup.shift();
-                          selsq();
-                          if (Math.max(sqgroup) == sqch9 && sqcap9 == "Empty") {
+                          if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 == "Empty") {
                             document.body.classList.add("sq9-cpu");
                             sqcap9 = "CPU";
-                        } else if (Math.max(sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
+                        } else if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
                             sqgroup.shift();
-                            selsq();
                         }
                       }
                     }
@@ -446,69 +410,60 @@ function selsq() {
     sqch7=Math.floor(Math.random()*Math.floor(21)+1);
     sqch8=Math.floor(Math.random()*Math.floor(70)+1);
     sqch9=Math.floor(Math.random()*Math.floor(72)+1);
-    sqch1.push(sqgroup);
-    sqch2.push(sqgroup);
-    sqch3.push(sqgroup);
-    sqch4.push(sqgroup);
-    sqch5.push(sqgroup);
-    sqch6.push(sqgroup);
-    sqch7.push(sqgroup);
-    sqch8.push(sqgroup);
-    sqch9.push(sqgroup);
-    if (Math.max(sqgroup) == sqch1 && sqcap1 == "Empty") {
+    sqgroup.push(sqch1);
+    sqgroup.push(sqch2);
+    sqgroup.push(sqch3);
+    sqgroup.push(sqch4);
+    sqgroup.push(sqch5);
+    sqgroup.push(sqch6);
+    sqgroup.push(sqch7);
+    sqgroup.push(sqch8);
+    sqgroup.push(sqch9);
+    if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 == "Empty") {
       document.body.classList.add("sq1-cpu");
       sqcap1 = "CPU";
-    } else if (Math.max(sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
+    } else if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
       sqgroup.shift();
-      selsq();
-      if (Math.max(sqgroup) == sqch2 && sqcap2 == "Empty") {
+      if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 == "Empty") {
         document.body.classList.add("sq2-cpu");
         sqcap2 = "CPU";
-      } else if (Math.max(sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
+      } else if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
           sqgroup.shift();
-          selsq();
-          if (Math.max(sqgroup) == sqch3 && sqcap3 == "Empty") {
+          if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 == "Empty") {
             document.body.classList.add("sq3-cpu");
             sqcap3 = "CPU";
-        } else if (Math.max(sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
+        } else if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
             sqgroup.shift();
-            selsq();
-            if (Math.max(sqgroup) == sqch4 && sqcap4 == "Empty") {
+            if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 == "Empty") {
               document.body.classList.add("sq4-cpu");
               sqcap4 = "CPU";
-            } else if (Math.max(sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
+            } else if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
               sqgroup.shift();
-              selsq();
-              if (Math.max(sqgroup) == sqch5 && sqcap5 == "Empty") {
+              if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 == "Empty") {
                 document.body.classList.add("sq5-cpu");
                 sqcap5 = "CPU";
-              } else if (Math.max(sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
+              } else if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
                   sqgroup.shift();
-                  selsq();
-                  if (Math.max(sqgroup) == sqch6 && sqcap6 == "Empty") {
+                  if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 == "Empty") {
                     document.body.classList.add("sq6-cpu");
                     sqcap6 = "CPU";
-                } else if (Math.max(sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
+                } else if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
                     sqgroup.shift();
-                    selsq();
-                    if (Math.max(sqgroup) == sqch7 && sqcap7 == "Empty") {
+                    if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 == "Empty") {
                       document.body.classList.add("sq7-cpu");
                       sqcap7 = "CPU";
-                    } else if (Math.max(sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
+                    } else if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
                       sqgroup.shift();
-                      selsq();
-                      if (Math.max(sqgroup) == sqch8 && sqcap8 == "Empty") {
+                      if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 == "Empty") {
                         document.body.classList.add("sq8-cpu");
                         sqcap8 = "CPU";
-                      } else if (Math.max(sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
+                      } else if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
                           sqgroup.shift();
-                          selsq();
-                          if (Math.max(sqgroup) == sqch9 && sqcap9 == "Empty") {
+                          if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 == "Empty") {
                             document.body.classList.add("sq9-cpu");
                             sqcap9 = "CPU";
-                        } else if (Math.max(sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
+                        } else if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
                             sqgroup.shift();
-                            selsq();
                         }
                       }
                     }
@@ -529,69 +484,60 @@ function selsq() {
     sqch7=Math.floor(Math.random()*Math.floor(83)+1);
     sqch8=Math.floor(Math.random()*Math.floor(76)+1);
     sqch9=Math.floor(Math.random()*Math.floor(58)+1);
-    sqch1.push(sqgroup);
-    sqch2.push(sqgroup);
-    sqch3.push(sqgroup);
-    sqch4.push(sqgroup);
-    sqch5.push(sqgroup);
-    sqch6.push(sqgroup);
-    sqch7.push(sqgroup);
-    sqch8.push(sqgroup);
-    sqch9.push(sqgroup);
-    if (Math.max(sqgroup) == sqch1 && sqcap1 == "Empty") {
+    sqgroup.push(sqch1);
+    sqgroup.push(sqch2);
+    sqgroup.push(sqch3);
+    sqgroup.push(sqch4);
+    sqgroup.push(sqch5);
+    sqgroup.push(sqch6);
+    sqgroup.push(sqch7);
+    sqgroup.push(sqch8);
+    sqgroup.push(sqch9);
+    if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 == "Empty") {
       document.body.classList.add("sq1-cpu");
       sqcap1 = "CPU";
-    } else if (Math.max(sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
+    } else if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
       sqgroup.shift();
-      selsq();
-      if (Math.max(sqgroup) == sqch2 && sqcap2 == "Empty") {
+      if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 == "Empty") {
         document.body.classList.add("sq2-cpu");
         sqcap2 = "CPU";
-      } else if (Math.max(sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
+      } else if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
           sqgroup.shift();
-          selsq();
-          if (Math.max(sqgroup) == sqch3 && sqcap3 == "Empty") {
+          if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 == "Empty") {
             document.body.classList.add("sq3-cpu");
             sqcap3 = "CPU";
-        } else if (Math.max(sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
+        } else if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
             sqgroup.shift();
-            selsq();
-            if (Math.max(sqgroup) == sqch4 && sqcap4 == "Empty") {
+            if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 == "Empty") {
               document.body.classList.add("sq4-cpu");
               sqcap4 = "CPU";
-            } else if (Math.max(sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
+            } else if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
               sqgroup.shift();
-              selsq();
-              if (Math.max(sqgroup) == sqch5 && sqcap5 == "Empty") {
+              if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 == "Empty") {
                 document.body.classList.add("sq5-cpu");
                 sqcap5 = "CPU";
-              } else if (Math.max(sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
+              } else if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
                   sqgroup.shift();
-                  selsq();
-                  if (Math.max(sqgroup) == sqch6 && sqcap6 == "Empty") {
+                  if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 == "Empty") {
                     document.body.classList.add("sq6-cpu");
                     sqcap6 = "CPU";
-                } else if (Math.max(sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
+                } else if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
                     sqgroup.shift();
-                    selsq();
-                    if (Math.max(sqgroup) == sqch7 && sqcap7 == "Empty") {
+                    if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 == "Empty") {
                       document.body.classList.add("sq7-cpu");
                       sqcap7 = "CPU";
-                    } else if (Math.max(sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
+                    } else if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
                       sqgroup.shift();
-                      selsq();
-                      if (Math.max(sqgroup) == sqch8 && sqcap8 == "Empty") {
+                      if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 == "Empty") {
                         document.body.classList.add("sq8-cpu");
                         sqcap8 = "CPU";
-                      } else if (Math.max(sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
+                      } else if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
                           sqgroup.shift();
-                          selsq();
-                          if (Math.max(sqgroup) == sqch9 && sqcap9 == "Empty") {
+                          if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 == "Empty") {
                             document.body.classList.add("sq9-cpu");
                             sqcap9 = "CPU";
-                        } else if (Math.max(sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
+                        } else if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
                             sqgroup.shift();
-                            selsq();
                         }
                       }
                     }
@@ -612,69 +558,60 @@ function selsq() {
     sqch7=Math.floor(Math.random()*Math.floor(75)+1);
     sqch8=Math.floor(Math.random()*Math.floor(86)+1);
     sqch9=Math.floor(Math.random()*Math.floor(74)+1);
-    sqch1.push(sqgroup);
-    sqch2.push(sqgroup);
-    sqch3.push(sqgroup);
-    sqch4.push(sqgroup);
-    sqch5.push(sqgroup);
-    sqch6.push(sqgroup);
-    sqch7.push(sqgroup);
-    sqch8.push(sqgroup);
-    sqch9.push(sqgroup);
-    if (Math.max(sqgroup) == sqch1 && sqcap1 == "Empty") {
+    sqgroup.push(sqch1);
+    sqgroup.push(sqch2);
+    sqgroup.push(sqch3);
+    sqgroup.push(sqch4);
+    sqgroup.push(sqch5);
+    sqgroup.push(sqch6);
+    sqgroup.push(sqch7);
+    sqgroup.push(sqch8);
+    sqgroup.push(sqch9);
+    if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 == "Empty") {
       document.body.classList.add("sq1-cpu");
       sqcap1 = "CPU";
-    } else if (Math.max(sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
+    } else if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
       sqgroup.shift();
-      selsq();
-      if (Math.max(sqgroup) == sqch2 && sqcap2 == "Empty") {
+      if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 == "Empty") {
         document.body.classList.add("sq2-cpu");
         sqcap2 = "CPU";
-      } else if (Math.max(sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
+      } else if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
           sqgroup.shift();
-          selsq();
-          if (Math.max(sqgroup) == sqch3 && sqcap3 == "Empty") {
+          if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 == "Empty") {
             document.body.classList.add("sq3-cpu");
             sqcap3 = "CPU";
-        } else if (Math.max(sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
+        } else if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
             sqgroup.shift();
-            selsq();
-            if (Math.max(sqgroup) == sqch4 && sqcap4 == "Empty") {
+            if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 == "Empty") {
               document.body.classList.add("sq4-cpu");
               sqcap4 = "CPU";
-            } else if (Math.max(sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
+            } else if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
               sqgroup.shift();
-              selsq();
-              if (Math.max(sqgroup) == sqch5 && sqcap5 == "Empty") {
+              if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 == "Empty") {
                 document.body.classList.add("sq5-cpu");
                 sqcap5 = "CPU";
-              } else if (Math.max(sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
+              } else if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
                   sqgroup.shift();
-                  selsq();
-                  if (Math.max(sqgroup) == sqch6 && sqcap6 == "Empty") {
+                  if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 == "Empty") {
                     document.body.classList.add("sq6-cpu");
                     sqcap6 = "CPU";
-                } else if (Math.max(sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
+                } else if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
                     sqgroup.shift();
-                    selsq();
-                    if (Math.max(sqgroup) == sqch7 && sqcap7 == "Empty") {
+                    if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 == "Empty") {
                       document.body.classList.add("sq7-cpu");
                       sqcap7 = "CPU";
-                    } else if (Math.max(sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
+                    } else if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
                       sqgroup.shift();
-                      selsq();
-                      if (Math.max(sqgroup) == sqch8 && sqcap8 == "Empty") {
+                      if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 == "Empty") {
                         document.body.classList.add("sq8-cpu");
                         sqcap8 = "CPU";
-                      } else if (Math.max(sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
+                      } else if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
                           sqgroup.shift();
-                          selsq();
-                          if (Math.max(sqgroup) == sqch9 && sqcap9 == "Empty") {
+                          if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 == "Empty") {
                             document.body.classList.add("sq9-cpu");
                             sqcap9 = "CPU";
-                        } else if (Math.max(sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
+                        } else if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
                             sqgroup.shift();
-                            selsq();
                         }
                       }
                     }
@@ -695,69 +632,60 @@ function selsq() {
     sqch7=Math.floor(Math.random()*Math.floor(52)+1);
     sqch8=Math.floor(Math.random()*Math.floor(75)+1);
     sqch9=Math.floor(Math.random()*Math.floor(88)+1);
-    sqch1.push(sqgroup);
-    sqch2.push(sqgroup);
-    sqch3.push(sqgroup);
-    sqch4.push(sqgroup);
-    sqch5.push(sqgroup);
-    sqch6.push(sqgroup);
-    sqch7.push(sqgroup);
-    sqch8.push(sqgroup);
-    sqch9.push(sqgroup);
-    if (Math.max(sqgroup) == sqch1 && sqcap1 == "Empty") {
+    sqgroup.push(sqch1);
+    sqgroup.push(sqch2);
+    sqgroup.push(sqch3);
+    sqgroup.push(sqch4);
+    sqgroup.push(sqch5);
+    sqgroup.push(sqch6);
+    sqgroup.push(sqch7);
+    sqgroup.push(sqch8);
+    sqgroup.push(sqch9);
+    if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 == "Empty") {
       document.body.classList.add("sq1-cpu");
       sqcap1 = "CPU";
-    } else if (Math.max(sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
+    } else if (Math.max.apply(Math, sqgroup) == sqch1 && sqcap1 != "Empty" || Math.max(sqgroup) != sqch1) {
       sqgroup.shift();
-      selsq();
-      if (Math.max(sqgroup) == sqch2 && sqcap2 == "Empty") {
+      if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 == "Empty") {
         document.body.classList.add("sq2-cpu");
         sqcap2 = "CPU";
-      } else if (Math.max(sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
+      } else if (Math.max.apply(Math, sqgroup) == sqch2 && sqcap2 != "Empty" || Math.max(sqgroup) != sqch2) {
           sqgroup.shift();
-          selsq();
-          if (Math.max(sqgroup) == sqch3 && sqcap3 == "Empty") {
+          if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 == "Empty") {
             document.body.classList.add("sq3-cpu");
             sqcap3 = "CPU";
-        } else if (Math.max(sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
+        } else if (Math.max.apply(Math, sqgroup) == sqch3 && sqcap3 != "Empty" || Math.max(sqgroup) != sqch3) {
             sqgroup.shift();
-            selsq();
-            if (Math.max(sqgroup) == sqch4 && sqcap4 == "Empty") {
+            if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 == "Empty") {
               document.body.classList.add("sq4-cpu");
               sqcap4 = "CPU";
-            } else if (Math.max(sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
+            } else if (Math.max.apply(Math, sqgroup) == sqch4 && sqcap4 != "Empty" || Math.max(sqgroup) != sqch4) {
               sqgroup.shift();
-              selsq();
-              if (Math.max(sqgroup) == sqch5 && sqcap5 == "Empty") {
+              if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 == "Empty") {
                 document.body.classList.add("sq5-cpu");
                 sqcap5 = "CPU";
-              } else if (Math.max(sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
+              } else if (Math.max.apply(Math, sqgroup) == sqch5 && sqcap5 != "Empty" || Math.max(sqgroup) != sqch5) {
                   sqgroup.shift();
-                  selsq();
-                  if (Math.max(sqgroup) == sqch6 && sqcap6 == "Empty") {
+                  if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 == "Empty") {
                     document.body.classList.add("sq6-cpu");
                     sqcap6 = "CPU";
-                } else if (Math.max(sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
+                } else if (Math.max.apply(Math, sqgroup) == sqch6 && sqcap6 != "Empty" || Math.max(sqgroup) != sqch6) {
                     sqgroup.shift();
-                    selsq();
-                    if (Math.max(sqgroup) == sqch7 && sqcap7 == "Empty") {
+                    if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 == "Empty") {
                       document.body.classList.add("sq7-cpu");
                       sqcap7 = "CPU";
-                    } else if (Math.max(sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
+                    } else if (Math.max.apply(Math, sqgroup) == sqch7 && sqcap7 != "Empty" || Math.max(sqgroup) != sqch7) {
                       sqgroup.shift();
-                      selsq();
-                      if (Math.max(sqgroup) == sqch8 && sqcap8 == "Empty") {
+                      if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 == "Empty") {
                         document.body.classList.add("sq8-cpu");
                         sqcap8 = "CPU";
-                      } else if (Math.max(sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
+                      } else if (Math.max.apply(Math, sqgroup) == sqch8 && sqcap8 != "Empty" || Math.max(sqgroup) != sqch8) {
                           sqgroup.shift();
-                          selsq();
-                          if (Math.max(sqgroup) == sqch9 && sqcap9 == "Empty") {
+                          if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 == "Empty") {
                             document.body.classList.add("sq9-cpu");
                             sqcap9 = "CPU";
-                        } else if (Math.max(sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
+                        } else if (Math.max.apply(Math, sqgroup) == sqch9 && sqcap9 != "Empty" || Math.max(sqgroup) != sqch9) {
                             sqgroup.shift();
-                            selsq();
                         }
                       }
                     }
@@ -899,4 +827,13 @@ buttonR.addEventListener('click', () => {
   document.body.classList.remove("sq7-player");
   document.body.classList.remove("sq8-player");
   document.body.classList.remove("sq9-player");
+  document.body.classList.remove("sq1-cpu");
+  document.body.classList.remove("sq2-cpu");
+  document.body.classList.remove("sq3-cpu");
+  document.body.classList.remove("sq4-cpu");
+  document.body.classList.remove("sq5-cpu");
+  document.body.classList.remove("sq6-cpu");
+  document.body.classList.remove("sq7-cpu");
+  document.body.classList.remove("sq8-cpu");
+  document.body.classList.remove("sq9-cpu");
 });
