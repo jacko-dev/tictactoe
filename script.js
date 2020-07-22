@@ -1,3 +1,4 @@
+playerwin = "Empty";
 button1 = document.getElementById("one");
 button2 = document.getElementById("two");
 button3 = document.getElementById("three");
@@ -17,6 +18,8 @@ sqcap6 = "Empty";
 sqcap7 = "Empty";
 sqcap8 = "Empty";
 sqcap9 = "Empty";
+document.getElementById("win").innerHTML = "You ____!";
+document.getElementById("win").style.opacity = 0;
 sqch1 = 0;
 sqch2 = 0;
 sqch3 = 0;
@@ -697,107 +700,237 @@ function selsq() {
     };
   }
 }
+function win() {
+  if (sqcap1 == "Player" && sqcap2 == "Player" && sqcap3 == "Player") {
+    document.getElementById("win").innerHTML = "You win!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "PlayerWin";
+  } else if (sqcap4 == "Player" && sqcap5 == "Player" && sqcap6 == "Player") {
+    document.getElementById("win").innerHTML = "You win!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "PlayerWin";
+  }  else if (sqcap7 == "Player" && sqcap8 == "Player" && sqcap9 == "Player") {
+    document.getElementById("win").innerHTML = "You win!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "PlayerWin";
+  }  else if (sqcap1 == "Player" && sqcap4 == "Player" && sqcap7 == "Player") {
+    document.getElementById("win").innerHTML = "You win!";
+    document.getElementById("win").style.opacity = 1;
+  }  else if (sqcap2 == "Player" && sqcap5 == "Player" && sqcap8 == "Player") {
+    document.getElementById("win").innerHTML = "You win!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "PlayerWin";
+  }  else if (sqcap3 == "Player" && sqcap6 == "Player" && sqcap9 == "Player") {
+    document.getElementById("win").innerHTML = "You win!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "PlayerWin";
+  }  else if (sqcap1 == "Player" && sqcap5 == "Player" && sqcap9 == "Player") {
+    document.getElementById("win").innerHTML = "You win!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "PlayerWin";
+  }  else if (sqcap3 == "Player" && sqcap5 == "Player" && sqcap7 == "Player") {
+    document.getElementById("win").innerHTML = "You win!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "PlayerWin";
+  } else if (sqcap1 == "CPU" && sqcap2 == "CPU" && sqcap3 == "CPU") {
+    document.getElementById("win").innerHTML = "You lost!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "CPUWin";
+  } else if (sqcap4 == "CPU" && sqcap5 == "CPU" && sqcap6 == "CPU") {
+    document.getElementById("win").innerHTML = "You lost!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "CPUWin";
+  }  else if (sqcap7 == "CPU" && sqcap8 == "CPU" && sqcap9 == "CPU") {
+    document.getElementById("win").innerHTML = "You lost!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "CPUWin";
+  }  else if (sqcap1 == "CPU" && sqcap4 == "CPU" && sqcap7 == "CPU") {
+    document.getElementById("win").innerHTML = "You lost!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "CPUWin";
+  }  else if (sqcap2 == "CPU" && sqcap5 == "CPU" && sqcap8 == "CPU") {
+    document.getElementById("win").innerHTML = "You lost!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "CPUWin";
+  }  else if (sqcap3 == "CPU" && sqcap6 == "CPU" && sqcap9 == "CPU") {
+    document.getElementById("win").innerHTML = "You lost!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "CPUWin";
+  }  else if (sqcap1 == "CPU" && sqcap5 == "CPU" && sqcap9 == "CPU") {
+    document.getElementById("win").innerHTML = "You lost!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "CPUWin";
+  }  else if (sqcap3 == "CPU" && sqcap5 == "CPU" && sqcap7 == "CPU") {
+    document.getElementById("win").innerHTML = "You lost!";
+    document.getElementById("win").style.opacity = 1;
+    playerwin = "CPUWin";
+  }
+}
 button1.addEventListener('click', () => {
-  if (sqcap1 == "Empty") {
+  if (sqcap1 == "Empty" && playerwin == "Empty") {
     document.body.classList.add("sq1-player");
     sqcap1 = "Player";
     last = 1;
     console.log(last);
-    selsq();
+    win();
+    if (playerwin == "PlayerWin") {
+      sqcap1;
+    } else if (playerwin == "CPUWin") {
+      sqcap1;
+    } else if (playerwin == "Empty") {
+      selsq();
+    }
   } else {
     sqcap1;
   }
 });
 button2.addEventListener('click', () => {
-  if (sqcap2 == "Empty") {
+  if (sqcap2 == "Empty" && playerwin == "Empty") {
     document.body.classList.add("sq2-player");
     sqcap2 = "Player";
     last = 2;
     console.log(last);
-    selsq();
+    win();
+    if (playerwin == "PlayerWin") {
+      sqcap2;
+    } else if (playerwin == "CPUWin") {
+      sqcap2;
+    } else if (playerwin == "Empty") {
+      selsq();
+    }
   } else {
     sqcap2;
   }
 });
 button3.addEventListener('click', () => {
-  if (sqcap3 == "Empty") {
+  if (sqcap3 == "Empty" && playerwin == "Empty") {
     document.body.classList.add("sq3-player");
     sqcap3 = "Player";
     last = 3;
     console.log(last);
-    selsq();
+    win();
+    if (playerwin == "PlayerWin") {
+      sqcap3;
+    } else if (playerwin == "CPUWin") {
+      sqcap3;
+    } else if (playerwin == "Empty") {
+      selsq();
+    }
   } else {
     sqcap3;
   }
 });
 button4.addEventListener('click', () => {
-  if (sqcap4 == "Empty") {
+  if (sqcap4 == "Empty" && playerwin == "Empty") {
     document.body.classList.add("sq4-player");
     sqcap4 = "Player";
     last = 4;
     console.log(last);
-    selsq();
+    win();
+    if (playerwin == "PlayerWin") {
+      sqcap4;
+    } else if (playerwin == "CPUWin") {
+      sqcap4;
+    } else if (playerwin == "Empty") {
+      selsq();
+    }
   } else {
     sqcap4;
   }
 });
 button5.addEventListener('click', () => {
-  if (sqcap5 == "Empty") {
+  if (sqcap5 == "Empty" && playerwin == "Empty") {
     document.body.classList.add("sq5-player");
     sqcap5 = "Player";
     last = 5;
     console.log(last);
-    selsq();
+    win();
+    if (playerwin == "PlayerWin") {
+      sqcap5;
+    } else if (playerwin == "CPUWin") {
+      sqcap5;
+    } else if (playerwin == "Empty") {
+      selsq();
+    }
   } else {
     sqcap5;
   }
 });
 button6.addEventListener('click', () => {
-  if (sqcap6 == "Empty") {
+  if (sqcap6 == "Empty" && playerwin == "Empty") {
     document.body.classList.add("sq6-player");
     sqcap6 = "Player";
     last = 6;
     console.log(last);
-    selsq();
+    win();
+    if (playerwin == "PlayerWin") {
+      sqcap6;
+    } else if (playerwin == "CPUWin") {
+      sqcap6;
+    } else if (playerwin == "Empty") {
+      selsq();
+    }
   } else {
     sqcap6;
   }
 });
 button7.addEventListener('click', () => {
-  if (sqcap7 == "Empty") {
+  if (sqcap7 == "Empty" && playerwin == "Empty") {
     document.body.classList.add("sq7-player");
     sqcap7 = "Player";
     last = 7;
     console.log(last);
-    selsq();
+    win();
+    if (playerwin == "PlayerWin") {
+      sqcap7;
+    } else if (playerwin == "CPUWin") {
+      sqcap7;
+    } else if (playerwin == "Empty") {
+      selsq();
+    }
   } else {
     sqcap7;
   }
 });
 button8.addEventListener('click', () => {
-  if (sqcap8 == "Empty") {
+  if (sqcap8 == "Empty" && playerwin == "Empty") {
     document.body.classList.add("sq8-player");
     sqcap8 = "Player";
     last = 8;
     console.log(last);
-    selsq();
+    win();
+    if (playerwin == "PlayerWin") {
+      sqcap8;
+    } else if (playerwin == "CPUWin") {
+      sqcap8;
+    } else if (playerwin == "Empty") {
+      selsq();
+    }
   } else {
     sqcap8;
   }
 });
 button9.addEventListener('click', () => {
-  if (sqcap9 == "Empty") {
+  if (sqcap9 == "Empty" && playerwin == "Empty") {
     document.body.classList.add("sq9-player");
     sqcap9 = "Player";
     last = 9;
     console.log(last);
-    selsq();
+    win();
+    if (playerwin == "PlayerWin") {
+      sqcap9;
+    } else if (playerwin == "CPUWin") {
+      sqcap9;
+    } else if (playerwin == "Empty") {
+      selsq();
+    }
   } else {
     sqcap9;
   }
 });
 buttonR.addEventListener('click', () => {
   console.log("reset");
+  playerwin = "Empty";
   sqcap1 = "Empty";
   sqcap2 = "Empty";
   sqcap3 = "Empty";
@@ -836,4 +969,6 @@ buttonR.addEventListener('click', () => {
   document.body.classList.remove("sq7-cpu");
   document.body.classList.remove("sq8-cpu");
   document.body.classList.remove("sq9-cpu");
+  document.getElementById("win").innerHTML = "You ____!";
+  document.getElementById("win").style.opacity = 0;
 });
