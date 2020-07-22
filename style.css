@@ -7,6 +7,12 @@ h1 {
   font-size:60px;
   color: #FFC43D;
 }
+h3#win {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size:60px;
+  color: #FFC43D;
+}
 .board button {
   position: grid;
   width:100px;
